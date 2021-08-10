@@ -98,15 +98,20 @@ app 폴더를 보면 manifests, java, res 폴더로 이루어져 있다.
   
 3) res
 
-  res폴더에는 layout, drawable, mipmap, value 패키지가 있다.
+    res폴더에는 layout, drawable, mipmap, value 패키지가 있다.
   
-  layout에 있는 파일들이 디자인의 뼈대를 담당하고 있는 부분이며 나머지는 이미지 파일이나 수치값들을 저장하고 있는 부수적인 저장소이다.
+    layout에 있는 파일들이 디자인의 뼈대를 담당하고 있는 부분이며 나머지는 이미지 파일이나 수치값들을 저장하고 있는 부수적인 저장소이다.
   
   - res/drawble : 이미지 파일 저장 
+  
   - res/mipmap : launcher 이미지(앱 아이콘) 저장 ➡ 안드로이드 어플리케이션을 실행할 때 누를 아이콘에 해당한다.
+  
   - res/values : 문자열, 색상값, 수치값, 스타일 저장 
+  
   - res/values/color.xml : 컬러 값 저장 
+  
   - res/values/strings.xml - 문자열 값 저장
+  
   - res/values/styles.xml - 스타일 값 저장 
 
 # 정리
