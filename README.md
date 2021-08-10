@@ -110,9 +110,9 @@ app 폴더를 보면 manifests, java, res 폴더로 이루어져 있다.
   
   - res/values/color.xml : 컬러 값 저장 
   
-  - res/values/strings.xml - 문자열 값 저장
+  - res/values/strings.xml : 문자열 값 저장
   
-  - res/values/styles.xml - 스타일 값 저장 
+  - res/values/styles.xml : 스타일 값 저장 
 
 # 정리
 
