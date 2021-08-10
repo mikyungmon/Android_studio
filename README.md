@@ -44,4 +44,26 @@ app 폴더를 보면 manifests, java, res 폴더로 이루어져 있다.
   
   - res : resource 폴더로 UI와 관련된 파일과 디자인 리소스, 문자열 리소스를 담고 있는 폴더이다. 모든 리소스(UI 문자열, 비트맵 이미지, XML 레이아웃 등)를 포함한다. 
   
-  ➡ **안드로이드 어플리케이션 프로젝트 구조는 크게 manifest, java, resource, gradle 로 이루어져 있다.**
+💡 **안드로이드 어플리케이션 프로젝트 구조는 크게 manifest, java, resource, gradle 로 이루어져 있다.**
+
+1) manifest 폴더 아래 있는 AndroidManifest.xml 파일 ( manifests/AndroidManifest.xml )
+
+![image](https://user-images.githubusercontent.com/66320010/128843386-895a1fa4-afc5-4392-bed5-54bcb9210b04.png)
+
+< >(꺽쇠)로 구분되어있는 코드를 볼 수 있다.
+
+- < manifest > : package= "com.korea.ultra.ultrakorea" ➡ 패키지 표시(폴더구조 표시). com/korea/ultra/ultrakorea 라는 뜻
+  
+- < application > : icon="@mipmap/ic_launcher" ➡ mipmap폴더 아래에 있는 ic_launcher라는 파일을 앱 아이콘으로 설정한다.
+  
+   theme="@style/AppTheme" ➡ 어플리케이션에 AppTheme이라는 테마를 적용한다.
+     
+   label="UltraKorea" ➡ 아이콘에 표시될 어플리케이션 이름은 UltraKorea이다.
+
+ - < activity > < intent-filter > < action > < category > : MainActivity가 생성될 때 자동으로 생성해준다. 
+
+2) java 패키지
+
+이 패키지내에 java파일(파일명.java)을 만들고 수정한다. 
+
+어플리케이션이 작동하는 방식에 대해 정의하는 java파일들이 모두 이곳에 들어있다.
