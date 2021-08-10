@@ -64,6 +64,60 @@ app 폴더를 보면 manifests, java, res 폴더로 이루어져 있다.
 
 2) java 패키지
 
-이 패키지내에 java파일(파일명.java)을 만들고 수정한다. 
+    이 패키지내에 java파일(파일명.java)을 만들고 수정한다. 
 
-어플리케이션이 작동하는 방식에 대해 정의하는 java파일들이 모두 이곳에 들어있다.
+    어플리케이션이 작동하는 방식에 대해 정의하는 java파일들이 모두 이곳에 들어있다.
+  
+  ![image](https://user-images.githubusercontent.com/66320010/128854841-15f5e89a-6a2c-440f-b0f7-c8dd91e17f2a.png)
+  
+  java 패키지 안에 "com.korea.ultra.ultrakorea" 패키지를 보면 MainActivity라는 파일이 들어있다.
+  
+  ![image](https://user-images.githubusercontent.com/66320010/128854961-071c7a9d-511e-4346-b56c-1b47e016e462.png)
+  
+   - MainActivity.java는 모든 프로젝트에 필수적으로 있어야하는 기본 파일이다. 
+   
+   - AndroidManifest.xml에서 < activity > < intent-filter > < action > < category > 에 MainActivity가 등록되어 있는 것을 볼 수 있는데 이 코드로 인해 어플리케이션이 실행될 때 가장 먼저 MainActivity가 실행될 수 있는 것이다.
+   
+   - 코드를 보면 onCreate()라는 함수가 정의되어 있고 그 안을 보면 setContentView(R.layout.activity_main); 이라는 코드가 보인다. 이 코드는 layout 패키지 아래 있는 activity_main.xml이라는 파일을 View로 연결한다.
+
+  ➡ Activity 파일에서 xml 파일을 연결해준다.
+  
+  xml 파일은 UI를 구현하는 파일이다. 디자이너로부터 받은 디자인을 구현할 때 xml파일을 만들면 된다.
+  
+  activity_main.xml에 대해 알아본다.
+  
+  ![image](https://user-images.githubusercontent.com/66320010/128855666-564a26f5-0923-4363-870b-2d3b73a47d00.png)
+  
+  AndroidManifest.xml 과 같이 태그형식(<>,꺽쇠)으로 구성된 XML형식의 파일이
+  
+  Design탭을 누르면 디자인이 어떻게 구현되었는지 미리 보기 기능을 제공한다.
+  
+ ➡ MainActivity 파일에서 activity_main.xml 파일을 연결해준다.
+
+  activity_main.xml은 res패키지 아래에 layout 패키지 아래에 위치해있다. 레이아웃과 관련한 화면 파일은 모두 이곳에 위치한다.
+  
+3) res
+
+  res폴더에는 layout, drawable, mipmap, value 패키지가 있다.
+  
+  layout에 있는 파일들이 디자인의 뼈대를 담당하고 있는 부분이며 나머지는 이미지 파일이나 수치값들을 저장하고 있는 부수적인 저장소이다.
+  
+  - res/drawble : 이미지 파일 저장 
+  - res/mipmap : launcher 이미지(앱 아이콘) 저장 ➡ 안드로이드 어플리케이션을 실행할 때 누를 아이콘에 해당한다.
+  - res/values : 문자열, 색상값, 수치값, 스타일 저장 
+  - res/values/color.xml : 컬러 값 저장 
+  - res/values/strings.xml - 문자열 값 저장
+  - res/values/styles.xml - 스타일 값 저장 
+
+# 정리
+
+1️⃣ 안드로이드 프로젝트는 app과 Gradle Scripts로 이루어져 있다.
+
+2️⃣ app은 manifests, java, res 패키지로 이루어져 있다.
+
+3️⃣ manifests는 프로젝트 설정에 관한 부분, java는 프로그래밍 구현 부분, res는 레이아웃과 이미지, 문자열 리소스 등 UI를 담당하는 부분이다.
+
+4️⃣ 모든 안드로이드 프로젝트는 MainActivity를 기본적으로 가지고 있어야하며 manifests/AndroidManifest.xml에서 설정해준다.
+
+5️⃣ 화면을 만들 때는 Activity(xxx.java파일)과 xml파일(xxx.xml)을 쌍으로 만들어주고 Activity 파일에서 xml파일을 연결해준다.
+  
