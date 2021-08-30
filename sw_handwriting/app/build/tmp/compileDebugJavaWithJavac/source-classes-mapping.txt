@@ -1,0 +1,17 @@
+com/example/sw_handwriting/CompareActivity.java
+ com.example.sw_handwriting.CompareActivity
+ com.example.sw_handwriting.CompareActivity$1
+com/example/sw_handwriting/SplashActivity.java
+ com.example.sw_handwriting.SplashActivity
+com/example/sw_handwriting/Memory.java
+ com.example.sw_handwriting.Memory
+com/example/sw_handwriting/MainActivity.java
+ com.example.sw_handwriting.MainActivity
+ com.example.sw_handwriting.MainActivity$1
+ com.example.sw_handwriting.MainActivity$2
+ com.example.sw_handwriting.MainActivity$3
+ com.example.sw_handwriting.MainActivity$3$1
+com/example/sw_handwriting/BuildConfig.java
+ com.example.sw_handwriting.BuildConfig
+com/example/sw_handwriting/ProgressDialog.java
+ com.example.sw_handwriting.ProgressDialog

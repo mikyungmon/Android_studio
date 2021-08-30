@@ -1,0 +1,109 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sw_handwriting"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:5:22-62
+12
+13    <!-- 카메라 사용을 사용자에게 알림 -->
+14    <uses-feature android:name="android.hardware.camera" />
+14-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:8:5-60
+14-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:8:19-57
+15    <uses-feature android:name="android.hardware.camera.autofocus" />
+15-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:10:5-70
+15-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:10:19-67
+16
+17    <!-- 사진을 외장 메모리에 저장하기 위해서 외장 USB에 쓰기 권한 요청 -->
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:13:5-81
+18-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:13:22-78
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:15:5-80
+19-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:15:22-77
+20
+21    <application
+21-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:17:5-55:19
+22        android:allowBackup="true"
+22-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:18:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.5.0] C:\Users\mkflo\.gradle\caches\transforms-2\files-2.1\5c4786bccfbaefa0f187e0e56044e26d\core-1.5.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher_new"
+25-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:19:9-47
+26        android:label="sw_handwriting"
+26-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:20:9-39
+27        android:roundIcon="@mipmap/ic_launcher_new_round"
+27-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:21:9-58
+28        android:supportsRtl="true"
+28-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:22:9-35
+29        android:testOnly="true"
+30        android:theme="@style/Theme.Sw_handwriting" >
+30-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:23:9-52
+31
+32        <!-- splash 액티비티 -->
+33        <activity
+33-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:26:9-35:20
+34            android:name="com.example.sw_handwriting.SplashActivity"
+34-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:26:19-49
+35            android:theme="@style/SplashTheme" >
+35-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:27:13-47
+36
+37            <!-- 앱 최초 실행 시 열릴 Activity 선언 -->
+38            <intent-filter>
+38-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:30:13-34:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:31:17-69
+39-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:31:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:33:17-77
+41-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:33:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <!-- main 액티비티 -->
+46        <activity
+46-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:38:9-39:57
+47            android:name="com.example.sw_handwriting.MainActivity"
+47-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:38:19-47
+48            android:theme="@style/AppTheme" >
+48-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:39:13-44
+49        </activity>
+50
+51        <provider
+51-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:41:9-49:20
+52            android:name="androidx.core.content.FileProvider"
+52-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:42:13-62
+53            android:authorities="com.example.sw_handwriting"
+53-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:43:13-61
+54            android:exported="false"
+54-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:44:13-37
+55            android:grantUriPermissions="true" >
+55-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:45:13-47
+56            <meta-data
+56-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:46:13-48:53
+57                android:name="android.support.FILE_PROVIDER_PATHS"
+57-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:47:17-67
+58                android:resource="@xml/filepaths" />
+58-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:48:17-50
+59        </provider>
+60
+61        <!-- compare 액티비티 -->
+62        <activity
+62-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:52:9-53:60
+63            android:name="com.example.sw_handwriting.CompareActivity"
+63-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:52:19-50
+64            android:theme="@style/CompareTheme" />
+64-->C:\Users\mkflo\AndroidStudioProjects\sw_handwriting\app\src\main\AndroidManifest.xml:53:13-48
+65    </application>
+66
+67</manifest>
